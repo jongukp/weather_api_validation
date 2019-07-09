@@ -1,0 +1,7 @@
+require 'httparty/timed'
+require 'pry'
+require 'rb-readline'
+require 'require_all'
+require 'json'
+require 'json-schema'
+require_rel '../../lib'
