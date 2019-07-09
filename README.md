@@ -5,7 +5,7 @@ To install all the required gems
 ```
 bundle
 ```
-To run test
+To run the tests
 ```
 cucumber
 ```

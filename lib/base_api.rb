@@ -2,9 +2,8 @@ require 'httparty'
 # Initialize the class
 #
 # @param host [String] localhost
-# @param port [String] port
 # @param https [Boolean] https connection
-# @return [UserApi] new instance of user class
+# @return [BaseApi] new instance of base class
 module BaseAPI
   include HTTParty
 
