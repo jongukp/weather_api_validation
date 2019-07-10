@@ -1,11 +1,10 @@
-When(/^I send GET request with valid lat, long coordinates$/) do
-  lat = 33.946213
-  long = -84.334648
-  @response = @weather_api.points(lat, long)
+When(/^I send GET request to \/points with following lat, long coordinates:$/) do |table|
+  coordinates = table.rows.flatten
+  @response = @weather_api.points(coordinates[0], coordinates[1])
+  @response_time = @response.duration
 end
 
-When(/^I send GET request with invalid lat, long coordinates$/) do
-  lat = 10
-  long = 20
-  @response = @weather_api.points(lat, long)
+When(/^I follow forecast link$/) do
+  uri = JSON.parse(@response.parsed_response)['properties']['forecastHourly']
+  @response = @weather_api.hourly_forecast(uri)
 end

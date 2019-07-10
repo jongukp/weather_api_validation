@@ -2,7 +2,7 @@
 
 source 'https://rubygems.org'
 
-gem 'httparty'
+gem 'httparty-timed'
 gem 'json', '~> 2.2'
 gem 'json-schema'
 gem 'pry'

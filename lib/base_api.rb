@@ -3,7 +3,7 @@ require 'httparty'
 #
 # @param host [String] localhost
 # @param https [Boolean] https connection
-# @return [BaseApi] new instance of base class
+# @return [BaseApi] new instance of base api class
 module BaseAPI
   include HTTParty
 

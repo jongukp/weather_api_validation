@@ -1,5 +1,5 @@
-require 'httparty/timed'
 require 'pry'
+require 'httparty/timed'
 require 'rb-readline'
 require 'require_all'
 require 'json'
