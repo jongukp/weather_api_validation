@@ -4,7 +4,7 @@ When(/^I send GET request to \/points with following lat, long coordinates:$/) d
   @response_time = @response.duration
 end
 
-When(/^I follow forecast link$/) do
+When(/^I follow the forecast link$/) do
   uri = JSON.parse(@response.parsed_response)['properties']['forecastHourly']
   @response = @weather_api.hourly_forecast(uri)
 end
