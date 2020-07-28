@@ -9,7 +9,7 @@ GEM
       multi_xml (>= 0.5.2)
     httparty-timed (1.0.0)
       httparty
-    json (2.2.0)
+    json (2.3.0)
     json-schema (2.8.1)
       addressable (>= 2.4)
     method_source (0.9.2)
@@ -29,7 +29,7 @@ PLATFORMS
 
 DEPENDENCIES
   httparty-timed
-  json (~> 2.2)
+  json (~> 2.3)
   json-schema
   pry
   rb-readline
